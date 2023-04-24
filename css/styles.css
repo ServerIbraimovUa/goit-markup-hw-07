@@ -1,0 +1,67 @@
+body{
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #ffffff;
+} 
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  display: block;
+  text-decoration: none;
+}
+/* =====container */
+.container {
+    margin: auto;
+    padding: 0 15px;
+    
+    width: 1158px;
+  }
+
+
+  /**
+    |============================
+    | header-logo-nav
+    |============================
+  */
+
+
+
+  /* ------logo----- */
+  .logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+  }
+  .logo_header {
+    color: #2e2f42;
+  }
+
+  /* ----------header------- */
+  .header {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+  .mobile-btn {
+    /* background-color: transparent; */
+    border: none;
+    display: block;
+}
