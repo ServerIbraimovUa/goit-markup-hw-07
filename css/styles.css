@@ -669,17 +669,22 @@ border-radius: 2px;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
-
+    
     opacity: 0;
     visibility:hidden;
     pointer-events: none;
   }
   .mobile-wraper{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 428px;
+    overflow-y: scroll;
     padding-left: 40px;
     padding-top: 24px;
     padding-right: 24px;
     padding-bottom: 40px;
+    background-color: #fff;
   }
   .mobile-menu.is-open {
     opacity: 1;
