@@ -245,3 +245,8 @@
   .footer-subscribe{
   }
 }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px), (min-resolution: 192dpi) and (min-width: 1158px){
+.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office@2x.jpg);
+}
+}
