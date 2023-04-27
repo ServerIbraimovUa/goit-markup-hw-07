@@ -15,8 +15,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/dekstop.css">
+    <!-- <link rel="stylesheet" href="./css/media.css"> -->
   </head>
   <body>
     <!-- хедер -->
@@ -61,7 +63,7 @@
             </svg>
           </button>
         </div>
-        <div class="mobile-menu is-open" data-menu>
+        <div class="mobile-menu " data-menu>
           <div class="mobile-wraper">
             <button type="button" class="mobile-close" data-menu-close>
               <svg class="svg-btn" width="8" height="8">
@@ -83,7 +85,7 @@
                 <li class="mobile-item"><a class="link-mobile link" href="tel:+110001111111"
                   >+11 (000) 111-11-11</a
                 ></li>
-                <li class="mobile-item"><a class="link-mobile link" href="mailto:info@devstudio.com"
+                <li class="mobile-item"><a class=" link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 ></li>
               </ul>
@@ -124,10 +126,12 @@
     <main>
       <!-- заголовок -->
       <section class="hero">
-        <h1 class="hero-text">Effective Solutions for Your Business</h1>
-        <button data-modal-open class="btn-hero" type="button">
-          Order Service
-        </button>
+        <div class="container">
+          <h1 class="hero-text">Effective Solutions for Your Business</h1>
+          <button data-modal-open class="btn-hero" type="button">
+            Order Service
+          </button>
+        </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button data-modal-close>
@@ -264,7 +268,7 @@
           <ul class="list list-team">
             <li class="list-item">
               <img
-                src="./images/Mark-Guerrero.jpg"
+                src="./images/team/Mark-Guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -305,7 +309,7 @@
             </li>
 
             <li class="list-item">
-              <img src="./images/Tom-Ford.jpg" alt="Tom Ford" width="264" />
+              <img src="./images/team/Tom-Ford.jpg" alt="Tom Ford" width="264" />
               <div class="team-div">
                 <h3 class="caption">Tom Ford</h3>
                 <p class="desc">Frontend Developer</p>
@@ -344,7 +348,7 @@
 
             <li class="list-item">
               <img
-                src="./images/Camila-Garcia.jpg"
+                src="./images/team/Camila-Garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
               />
@@ -386,7 +390,7 @@
 
             <li class="list-item">
               <img
-                src="./images/Daniel-Wilson.jpg"
+                src="./images/team/Daniel-Wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
               />

@@ -1,6 +1,6 @@
 :root {
 }
-/* body {
+body {
   font-family: "Roboto", sans-serif;
   cground-coolor: #434455;
   backlor: #ffffff;
@@ -25,14 +25,14 @@ img {
 .link {
   display: block;
   text-decoration: none;
-} */
+}
 
 /* =====container */
-/* .container {
-  margin: auto;
+ .container {
+  margin:auto;
   padding: 0 15px;
-  width: 1158px;
-} */
+ max-width: 1158px;
+}
 /* ========section */
 .section {
   padding: 120px 0;
@@ -46,10 +46,10 @@ img {
 }
 
 /* =====display= */
-/* .container-nav{
+.container-nav{
   display: flex;
   align-items: center;
-} */
+}
 
 .list-strategy {
   display: flex;
@@ -76,7 +76,7 @@ img {
 }
 
 /* Лого */
-/* .logo {
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -84,7 +84,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-} */
+}
 .logo-footer {
   margin-bottom: 16px;
   display: inline-block;
@@ -97,14 +97,14 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
 }
-/* .logo_header {
+.logo_header {
   color: #2e2f42;
-} */
+}
 .logo_text {
   color: #f4f4fd;
 }
 /* навигация */
-/* .header {
+.header {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -150,7 +150,7 @@ nav .menu-item:not(:last-child) {
 .menu-link:hover::after,
 .menu-link:focus::after {
   transform: scaleX(1);
-} */
+}
 /* active */
 .menu-link.active::after {
   transform: scaleX(1);
@@ -186,13 +186,11 @@ margin-left: auto;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1440px;
-  height: 600px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/img-name.jpg);
+    url(../images/people-office.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
