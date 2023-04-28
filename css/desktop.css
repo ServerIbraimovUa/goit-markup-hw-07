@@ -103,4 +103,16 @@ line-height:1.22;
           .footer-flex{
             justify-content: space-between;
           }
+          /**
+            |============================
+            | portfolio
+            |============================
+          */
+          .section-portfolio{
+            padding-top: 100px;
+            padding-bottom: 120px;
+          }
+          .item-portfolio {
+            width: calc((100% - 48px) / 3);
+          }
 }

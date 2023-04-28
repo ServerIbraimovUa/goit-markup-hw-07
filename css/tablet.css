@@ -48,6 +48,20 @@
 .subtitle-footer{
   width: 264px;
 }
+.section-portfolio{
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.list-filter{
+  justify-content: center;
+  margin-bottom: 64px;
+}
+.item-portfolio {
+  width: calc((100% - 24px) / 2);
+}
+.buttons{
+  padding: 16px 32px;
+}
 }
 
 @media screen and (max-width:1157px) {
