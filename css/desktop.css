@@ -1,0 +1,106 @@
+@media screen and (min-width:1158px) {
+    .container{
+        width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .contact-list{
+        display: flex;
+        gap: 40px;
+    }
+
+    .hero{
+        padding: 188px 0;
+        background-image:linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ), url(../images/bg/people-office.jpg);
+        }
+
+    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx){
+        .hero{
+            background-image:linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+              ), url(../images/bg/people-office@2x.jpg);
+            }
+    
+        }
+
+        .hero-text{
+            margin-bottom: 48px;
+        }
+        /**
+          |============================
+          | strategy
+          |============================
+        */
+        .section{
+            padding: 120px 0;
+        }
+        .list-strategy{
+            display: flex;
+            gap: 24px;
+        }
+        .item-strategy{
+            width: calc((100% - 74px) / 4);
+        }
+        .strategy-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 112px;
+            margin-bottom: 8px;
+            background: #f4f4fd;
+            border-radius: 4px;
+          }
+          .caption{
+            font-weight: 500;
+font-size: 20px;
+line-height:1.22;
+          }
+          .subtitle{
+            font-weight: 400;
+          }
+          /**
+            |============================
+            | doing
+            |============================
+          */
+          .section-doing{
+            padding-bottom: 120px;
+          }
+          .list-doing{
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+          }
+          /**
+            |============================
+            | team
+            |============================
+          */
+          .section-team{
+            padding: 120px 0;
+          }
+          .list-item{
+            flex-basis: calc((100% - 72px) / 4);
+          }
+          /**
+            |============================
+            | brabd
+            |============================
+          */
+          .section-brand{
+            padding: 120px 0;
+          }
+          .brand-item{
+            flex-basis: calc((100% - 5 * 24px) / 6);
+          }
+
+
+          /* footer- */
+          .footer-flex{
+            justify-content: space-between;
+          }
+}

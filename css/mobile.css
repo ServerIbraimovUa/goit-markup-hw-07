@@ -30,7 +30,6 @@ img {
   width: 100%;
   margin: 0 auto;
   padding: 0 16px;
-  outline: 1px solid tomato;
 }
 
 /**
@@ -196,6 +195,15 @@ img {
         }
   }
 
+  .list-strategy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+      }
+
   .list-team{
     flex-direction: column;
     align-items: center;
@@ -282,12 +290,8 @@ img {
   .section{
     padding: 96px 0;
   }
-  .list-strategy{
-    text-align: center;
-  }
-  .item-strategy:not(:last-child){
-    margin-bottom: 72px;
-  }
+
+  
   .caption{
     margin-bottom: 8px;
     font-weight: 700;
