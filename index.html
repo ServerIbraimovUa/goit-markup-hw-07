@@ -15,10 +15,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css">
     <link rel="stylesheet" href="./css/desktop.css">
-    <!-- <link rel="stylesheet" href="./css/media.css"> -->
   </head>
   <body>
     <!-- хедер -->
@@ -248,18 +249,25 @@
       <section class="section-doing">
         <div class="container">
           <h2 class="title">What are we doing</h2>
-          <ul class="list list-doing">
-            <li class="item-doing">
+          <ul class="list list-doing" >
+            <li class="item-doing" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <img
               srcset="./images/doing/img-1@2x.jpg 2x"
                src="./images/doing/img-1.jpg" alt="computer" width="360" />
             </li>
-            <li class="item-doing">
+            <li class="item-doing"
+            data-aos="fade-up"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
               <img
               srcset="./images/doing/img-2@2x.jpg 2x" 
               src="./images/doing/img-2.jpg" alt="phone" width="360" />
             </li>
-            <li class="item-doing">
+            <li class="item-doing" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <img
               srcset="./images/doing/img-3@2x.jpg 2x"
                src="./images/doing/img-3.jpg" alt="phone" width="360" />
@@ -560,8 +568,9 @@
         </div>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/aos.js"></script>
   </body>
 </html>

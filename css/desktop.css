@@ -50,6 +50,7 @@ line-height:1.22;
           */
           .section-doing{
             padding-bottom: 120px;
+            display: flex;
           }
           .list-doing{
             display: flex;
