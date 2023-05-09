@@ -173,10 +173,10 @@ img {
     margin-left: auto;
     margin-bottom: 32px;
 
-    border: none;
+    background: transparent;
     border-radius: 50%;
     cursor: pointer;
-    border: 1px solid #2e2f42;
+    border: 0.1px solid #2e2f42;
   }
   .mobile-close:hover,
   .mobile-close:focus {
@@ -206,6 +206,7 @@ img {
   .link-number:hover {
     color: #404bbf;
   }
+
   .link-number {
     font-style: normal;
     font-weight: 500;
@@ -219,7 +220,8 @@ img {
   }
   .mobile-icon-list {
     display: flex;
-    gap: 32px;
+    max-width: 328px;
+    justify-content: space-between;
   }
 
   .hero-text {
@@ -274,7 +276,7 @@ img {
   }
 
   .section-portfolio {
-    padding: 48px;
+    padding: 48px 0;
   }
   .buttons {
     padding: 8px 16px;
@@ -352,6 +354,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: start;
 }
 /**
     |============================
@@ -673,6 +676,11 @@ line-height:1.22;
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (min-width:768px) {
+  .modal {
+    width:408px;
+  }
+}
 @media screen and (max-width: 392px) {
   .modal {
     width: 100%;
@@ -725,6 +733,8 @@ line-height:1.22;
   line-height: 1.7;
   letter-spacing: 0.04em;
   color: #8e8f99;
+
+  transition: fill 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .textarea-label {
   margin-bottom: 16px;
@@ -740,6 +750,8 @@ line-height:1.22;
   outline: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+
+  transition: border 300ms linear;
 }
 
 .textarea {
@@ -751,6 +763,7 @@ line-height:1.22;
   outline: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  transition: border 300ms linear;
 }
 .textarea::placeholder {
   font-weight: 400;
@@ -792,6 +805,7 @@ line-height:1.22;
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+
 }
 
 .checkbox-icon {
@@ -801,14 +815,12 @@ line-height:1.22;
   margin-right: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+
+  transition: background 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+
 }
 .checkbox:checked ~ .checkbox-icon {
   background: #404bbf;
-  /* background-image: url(../images/checkbox.svg);
-    background-size:contain;
-  
-    border: none;
-  border-radius: 2px; */
 }
 .checkbox:focus ~ .checkbox-icon {
   outline: 1px solid rgba(46, 47, 66, 0.4);
@@ -892,7 +904,7 @@ line-height:1.22;
   transform: translatey(0);
 }
 .card-animations > p {
-  width: 296px;
+  max-width: 296px;
   min-height: 96px;
 
   font-weight: 400;
